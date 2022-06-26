@@ -1,0 +1,33 @@
+﻿@page "/thongke"
+<h1>Bảng thống kê khách hàng mua hàng</h1>
+<SfGrid DataSource="@Orders" AllowPaging="true" AllowSorting="true" AllowFiltering="true" AllowGrouping="true">
+ <GridPageSettings PageSize="5"></GridPageSettings>
+   <GridColumns>
+     <GridColumn Field=@nameof(Order.OrderID) HeaderText="Mã đơn hàng" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+     <GridColumn Field=@nameof(Order.CustomerID) HeaderText="Tên khách hàng" Width="150"></GridColumn>
+     <GridColumn Field=@nameof(Order.OrderDate) HeaderText=" Ngày đặt hàng" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+     <GridColumn Field=@nameof(Order.Tensanpham) HeaderText="Tên sản phẩm" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+   </GridColumns>
+</SfGrid>
+
+@code{
+    public List<Order> Orders { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Orders = Enumerable.Range(1, 75).Select(x => new Order()
+        {
+            OrderID = 1000 + x,
+            CustomerID = (new string[] { "Đức Minh", "Hoài Ngọc", "Mẫn Nhi", "Phúc Du", "Hoàng Long" })[new Random().Next(5)],
+            Tensanpham = (new string[] { "Lens chân dung", "Lens phong cảnh", "Lens cận cảnh"})[new Random().Next(3)],
+            OrderDate = DateTime.Now.AddDays(-x),
+        }).ToList();
+    }
+
+    public class Order {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public string Tensanpham { get; set; }
+        public DateTime? OrderDate { get; set; }
+    }
+}

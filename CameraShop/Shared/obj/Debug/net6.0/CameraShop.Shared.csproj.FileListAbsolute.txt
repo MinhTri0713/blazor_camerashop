@@ -1,0 +1,12 @@
+D:\CameraShop\CameraShop\Shared\bin\Debug\net6.0\CameraShop.Shared.deps.json
+D:\CameraShop\CameraShop\Shared\bin\Debug\net6.0\CameraShop.Shared.dll
+D:\CameraShop\CameraShop\Shared\bin\Debug\net6.0\CameraShop.Shared.pdb
+D:\CameraShop\CameraShop\Shared\obj\Debug\net6.0\CameraShop.Shared.csproj.AssemblyReference.cache
+D:\CameraShop\CameraShop\Shared\obj\Debug\net6.0\CameraShop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\CameraShop\CameraShop\Shared\obj\Debug\net6.0\CameraShop.Shared.AssemblyInfoInputs.cache
+D:\CameraShop\CameraShop\Shared\obj\Debug\net6.0\CameraShop.Shared.AssemblyInfo.cs
+D:\CameraShop\CameraShop\Shared\obj\Debug\net6.0\CameraShop.Shared.csproj.CoreCompileInputs.cache
+D:\CameraShop\CameraShop\Shared\obj\Debug\net6.0\CameraShop.Shared.dll
+D:\CameraShop\CameraShop\Shared\obj\Debug\net6.0\refint\CameraShop.Shared.dll
+D:\CameraShop\CameraShop\Shared\obj\Debug\net6.0\CameraShop.Shared.pdb
+D:\CameraShop\CameraShop\Shared\obj\Debug\net6.0\ref\CameraShop.Shared.dll
